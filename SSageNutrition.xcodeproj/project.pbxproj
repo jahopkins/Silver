@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C86C05CA298B73DA002C2CFC /* ListOfFoodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C05C9298B73DA002C2CFC /* ListOfFoodsView.swift */; };
+		C8CFE85629823ECD000DD838 /* API-requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFE85529823ECD000DD838 /* API-requests.swift */; };
+		C8CFE85929838438000DD838 /* MicronutrientAmounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFE85829838437000DD838 /* MicronutrientAmounts.swift */; };
+		C8CFE85B2983897C000DD838 /* MicronutrientResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFE85A2983897C000DD838 /* MicronutrientResultsModel.swift */; };
+		C8CFE85E2983E087000DD838 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFE85D2983E087000DD838 /* AddFoodView.swift */; };
+		C8CFE8602983E606000DD838 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFE85F2983E606000DD838 /* DataView.swift */; };
+		C8CFE8642986510A000DD838 /* GetNutrientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFE8632986510A000DD838 /* GetNutrientsView.swift */; };
+		C8CFE8662986F8BA000DD838 /* ApiResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFE8652986F8BA000DD838 /* ApiResultView.swift */; };
+		C8F5A0522981DD1600D9EF2C /* SSageNutritionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A0512981DD1600D9EF2C /* SSageNutritionApp.swift */; };
+		C8F5A0542981DD1600D9EF2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A0532981DD1600D9EF2C /* ContentView.swift */; };
+		C8F5A0562981DD1800D9EF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F5A0552981DD1800D9EF2C /* Assets.xcassets */; };
+		C8F5A0592981DD1800D9EF2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F5A0582981DD1800D9EF2C /* Preview Assets.xcassets */; };
+		C8F5A0632981DD1800D9EF2C /* SSageNutritionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A0622981DD1800D9EF2C /* SSageNutritionTests.swift */; };
+		C8F5A06D2981DD1800D9EF2C /* SSageNutritionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A06C2981DD1800D9EF2C /* SSageNutritionUITests.swift */; };
+		C8F5A06F2981DD1800D9EF2C /* SSageNutritionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A06E2981DD1800D9EF2C /* SSageNutritionUITestsLaunchTests.swift */; };
+		C8F5A07C2981DE7700D9EF2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8F5A07B2981DE7700D9EF2C /* GoogleService-Info.plist */; };
+		C8F5A07D2981DE7700D9EF2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8F5A07B2981DE7700D9EF2C /* GoogleService-Info.plist */; };
+		C8F5A07E2981DE7700D9EF2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8F5A07B2981DE7700D9EF2C /* GoogleService-Info.plist */; };
+		C8F5A0812981DF4700D9EF2C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C8F5A0802981DF4700D9EF2C /* FirebaseAuth */; };
+		C8F5A0832981DF4700D9EF2C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C8F5A0822981DF4700D9EF2C /* FirebaseDatabase */; };
+		C8F5A0852981DF4700D9EF2C /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C8F5A0842981DF4700D9EF2C /* FirebaseDatabaseSwift */; };
+		C8F5A0872981DF4700D9EF2C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C8F5A0862981DF4700D9EF2C /* FirebaseFirestore */; };
+		C8F5A0892981DF4700D9EF2C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C8F5A0882981DF4700D9EF2C /* FirebaseFirestoreSwift */; };
+		C8F5A08B2981DF4700D9EF2C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C8F5A08A2981DF4700D9EF2C /* FirebaseStorage */; };
+		C8F5A08F2981E7EA00D9EF2C /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A08E2981E7EA00D9EF2C /* Food.swift */; };
+		C8F5A0902981E7EA00D9EF2C /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A08E2981E7EA00D9EF2C /* Food.swift */; };
+		C8F5A0912981E7EA00D9EF2C /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A08E2981E7EA00D9EF2C /* Food.swift */; };
+		C8F5A0942981F59100D9EF2C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A0932981F59100D9EF2C /* ViewModel.swift */; };
+		C8F5A0952981F59100D9EF2C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A0932981F59100D9EF2C /* ViewModel.swift */; };
+		C8F5A0962981F59100D9EF2C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A0932981F59100D9EF2C /* ViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8F5A05F2981DD1800D9EF2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8F5A0462981DD1600D9EF2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8F5A04D2981DD1600D9EF2C;
+			remoteInfo = SSageNutrition;
+		};
+		C8F5A0692981DD1800D9EF2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8F5A0462981DD1600D9EF2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8F5A04D2981DD1600D9EF2C;
+			remoteInfo = SSageNutrition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C86C05C9298B73DA002C2CFC /* ListOfFoodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfFoodsView.swift; sourceTree = "<group>"; };
+		C8CFE85529823ECD000DD838 /* API-requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API-requests.swift"; sourceTree = "<group>"; };
+		C8CFE85729830101000DD838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C8CFE85829838437000DD838 /* MicronutrientAmounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicronutrientAmounts.swift; sourceTree = "<group>"; };
+		C8CFE85A2983897C000DD838 /* MicronutrientResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicronutrientResultsModel.swift; sourceTree = "<group>"; };
+		C8CFE85D2983E087000DD838 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		C8CFE85F2983E606000DD838 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
+		C8CFE8632986510A000DD838 /* GetNutrientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNutrientsView.swift; sourceTree = "<group>"; };
+		C8CFE8652986F8BA000DD838 /* ApiResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResultView.swift; sourceTree = "<group>"; };
+		C8F5A04E2981DD1600D9EF2C /* SSageNutrition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSageNutrition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F5A0512981DD1600D9EF2C /* SSageNutritionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSageNutritionApp.swift; sourceTree = "<group>"; };
+		C8F5A0532981DD1600D9EF2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C8F5A0552981DD1800D9EF2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8F5A0582981DD1800D9EF2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8F5A05E2981DD1800D9EF2C /* SSageNutritionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSageNutritionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F5A0622981DD1800D9EF2C /* SSageNutritionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSageNutritionTests.swift; sourceTree = "<group>"; };
+		C8F5A0682981DD1800D9EF2C /* SSageNutritionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSageNutritionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F5A06C2981DD1800D9EF2C /* SSageNutritionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSageNutritionUITests.swift; sourceTree = "<group>"; };
+		C8F5A06E2981DD1800D9EF2C /* SSageNutritionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSageNutritionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C8F5A07B2981DE7700D9EF2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8F5A08E2981E7EA00D9EF2C /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		C8F5A0932981F59100D9EF2C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8F5A04B2981DD1600D9EF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F5A0892981DF4700D9EF2C /* FirebaseFirestoreSwift in Frameworks */,
+				C8F5A0852981DF4700D9EF2C /* FirebaseDatabaseSwift in Frameworks */,
+				C8F5A0872981DF4700D9EF2C /* FirebaseFirestore in Frameworks */,
+				C8F5A0832981DF4700D9EF2C /* FirebaseDatabase in Frameworks */,
+				C8F5A0812981DF4700D9EF2C /* FirebaseAuth in Frameworks */,
+				C8F5A08B2981DF4700D9EF2C /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F5A05B2981DD1800D9EF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F5A0652981DD1800D9EF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8CFE85C2983E064000DD838 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8CFE85D2983E087000DD838 /* AddFoodView.swift */,
+				C8CFE85F2983E606000DD838 /* DataView.swift */,
+				C8CFE8632986510A000DD838 /* GetNutrientsView.swift */,
+				C8CFE8652986F8BA000DD838 /* ApiResultView.swift */,
+				C86C05C9298B73DA002C2CFC /* ListOfFoodsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8F5A0452981DD1600D9EF2C = {
+			isa = PBXGroup;
+			children = (
+				C8F5A0502981DD1600D9EF2C /* SSageNutrition */,
+				C8F5A0612981DD1800D9EF2C /* SSageNutritionTests */,
+				C8F5A06B2981DD1800D9EF2C /* SSageNutritionUITests */,
+				C8F5A04F2981DD1600D9EF2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8F5A04F2981DD1600D9EF2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8F5A04E2981DD1600D9EF2C /* SSageNutrition.app */,
+				C8F5A05E2981DD1800D9EF2C /* SSageNutritionTests.xctest */,
+				C8F5A0682981DD1800D9EF2C /* SSageNutritionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8F5A0502981DD1600D9EF2C /* SSageNutrition */ = {
+			isa = PBXGroup;
+			children = (
+				C8CFE85C2983E064000DD838 /* Views */,
+				C8CFE85729830101000DD838 /* Info.plist */,
+				C8F5A08D2981E7C100D9EF2C /* Models */,
+				C8F5A07B2981DE7700D9EF2C /* GoogleService-Info.plist */,
+				C8F5A0922981F57900D9EF2C /* View Models */,
+				C8F5A0512981DD1600D9EF2C /* SSageNutritionApp.swift */,
+				C8F5A0532981DD1600D9EF2C /* ContentView.swift */,
+				C8F5A0552981DD1800D9EF2C /* Assets.xcassets */,
+				C8F5A0572981DD1800D9EF2C /* Preview Content */,
+				C8CFE85529823ECD000DD838 /* API-requests.swift */,
+			);
+			path = SSageNutrition;
+			sourceTree = "<group>";
+		};
+		C8F5A0572981DD1800D9EF2C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C8F5A0582981DD1800D9EF2C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C8F5A0612981DD1800D9EF2C /* SSageNutritionTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8F5A0622981DD1800D9EF2C /* SSageNutritionTests.swift */,
+			);
+			path = SSageNutritionTests;
+			sourceTree = "<group>";
+		};
+		C8F5A06B2981DD1800D9EF2C /* SSageNutritionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8F5A06C2981DD1800D9EF2C /* SSageNutritionUITests.swift */,
+				C8F5A06E2981DD1800D9EF2C /* SSageNutritionUITestsLaunchTests.swift */,
+			);
+			path = SSageNutritionUITests;
+			sourceTree = "<group>";
+		};
+		C8F5A08D2981E7C100D9EF2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8F5A08E2981E7EA00D9EF2C /* Food.swift */,
+				C8CFE85829838437000DD838 /* MicronutrientAmounts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C8F5A0922981F57900D9EF2C /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8F5A0932981F59100D9EF2C /* ViewModel.swift */,
+				C8CFE85A2983897C000DD838 /* MicronutrientResultsModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8F5A04D2981DD1600D9EF2C /* SSageNutrition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8F5A0722981DD1800D9EF2C /* Build configuration list for PBXNativeTarget "SSageNutrition" */;
+			buildPhases = (
+				C8F5A04A2981DD1600D9EF2C /* Sources */,
+				C8F5A04B2981DD1600D9EF2C /* Frameworks */,
+				C8F5A04C2981DD1600D9EF2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSageNutrition;
+			packageProductDependencies = (
+				C8F5A0802981DF4700D9EF2C /* FirebaseAuth */,
+				C8F5A0822981DF4700D9EF2C /* FirebaseDatabase */,
+				C8F5A0842981DF4700D9EF2C /* FirebaseDatabaseSwift */,
+				C8F5A0862981DF4700D9EF2C /* FirebaseFirestore */,
+				C8F5A0882981DF4700D9EF2C /* FirebaseFirestoreSwift */,
+				C8F5A08A2981DF4700D9EF2C /* FirebaseStorage */,
+			);
+			productName = SSageNutrition;
+			productReference = C8F5A04E2981DD1600D9EF2C /* SSageNutrition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8F5A05D2981DD1800D9EF2C /* SSageNutritionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8F5A0752981DD1800D9EF2C /* Build configuration list for PBXNativeTarget "SSageNutritionTests" */;
+			buildPhases = (
+				C8F5A05A2981DD1800D9EF2C /* Sources */,
+				C8F5A05B2981DD1800D9EF2C /* Frameworks */,
+				C8F5A05C2981DD1800D9EF2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8F5A0602981DD1800D9EF2C /* PBXTargetDependency */,
+			);
+			name = SSageNutritionTests;
+			productName = SSageNutritionTests;
+			productReference = C8F5A05E2981DD1800D9EF2C /* SSageNutritionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8F5A0672981DD1800D9EF2C /* SSageNutritionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8F5A0782981DD1800D9EF2C /* Build configuration list for PBXNativeTarget "SSageNutritionUITests" */;
+			buildPhases = (
+				C8F5A0642981DD1800D9EF2C /* Sources */,
+				C8F5A0652981DD1800D9EF2C /* Frameworks */,
+				C8F5A0662981DD1800D9EF2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8F5A06A2981DD1800D9EF2C /* PBXTargetDependency */,
+			);
+			name = SSageNutritionUITests;
+			productName = SSageNutritionUITests;
+			productReference = C8F5A0682981DD1800D9EF2C /* SSageNutritionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8F5A0462981DD1600D9EF2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C8F5A04D2981DD1600D9EF2C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C8F5A05D2981DD1800D9EF2C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C8F5A04D2981DD1600D9EF2C;
+					};
+					C8F5A0672981DD1800D9EF2C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C8F5A04D2981DD1600D9EF2C;
+					};
+				};
+			};
+			buildConfigurationList = C8F5A0492981DD1600D9EF2C /* Build configuration list for PBXProject "SSageNutrition" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8F5A0452981DD1600D9EF2C;
+			packageReferences = (
+				C8F5A07F2981DF4700D9EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = C8F5A04F2981DD1600D9EF2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8F5A04D2981DD1600D9EF2C /* SSageNutrition */,
+				C8F5A05D2981DD1800D9EF2C /* SSageNutritionTests */,
+				C8F5A0672981DD1800D9EF2C /* SSageNutritionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8F5A04C2981DD1600D9EF2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F5A0592981DD1800D9EF2C /* Preview Assets.xcassets in Resources */,
+				C8F5A0562981DD1800D9EF2C /* Assets.xcassets in Resources */,
+				C8F5A07C2981DE7700D9EF2C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F5A05C2981DD1800D9EF2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F5A07D2981DE7700D9EF2C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F5A0662981DD1800D9EF2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F5A07E2981DE7700D9EF2C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8F5A04A2981DD1600D9EF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CFE8642986510A000DD838 /* GetNutrientsView.swift in Sources */,
+				C8CFE8602983E606000DD838 /* DataView.swift in Sources */,
+				C8CFE85E2983E087000DD838 /* AddFoodView.swift in Sources */,
+				C86C05CA298B73DA002C2CFC /* ListOfFoodsView.swift in Sources */,
+				C8F5A0542981DD1600D9EF2C /* ContentView.swift in Sources */,
+				C8CFE85B2983897C000DD838 /* MicronutrientResultsModel.swift in Sources */,
+				C8CFE85929838438000DD838 /* MicronutrientAmounts.swift in Sources */,
+				C8F5A0522981DD1600D9EF2C /* SSageNutritionApp.swift in Sources */,
+				C8F5A0942981F59100D9EF2C /* ViewModel.swift in Sources */,
+				C8F5A08F2981E7EA00D9EF2C /* Food.swift in Sources */,
+				C8CFE85629823ECD000DD838 /* API-requests.swift in Sources */,
+				C8CFE8662986F8BA000DD838 /* ApiResultView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F5A05A2981DD1800D9EF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F5A0632981DD1800D9EF2C /* SSageNutritionTests.swift in Sources */,
+				C8F5A0952981F59100D9EF2C /* ViewModel.swift in Sources */,
+				C8F5A0902981E7EA00D9EF2C /* Food.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F5A0642981DD1800D9EF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F5A06D2981DD1800D9EF2C /* SSageNutritionUITests.swift in Sources */,
+				C8F5A06F2981DD1800D9EF2C /* SSageNutritionUITestsLaunchTests.swift in Sources */,
+				C8F5A0962981F59100D9EF2C /* ViewModel.swift in Sources */,
+				C8F5A0912981E7EA00D9EF2C /* Food.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8F5A0602981DD1800D9EF2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8F5A04D2981DD1600D9EF2C /* SSageNutrition */;
+			targetProxy = C8F5A05F2981DD1800D9EF2C /* PBXContainerItemProxy */;
+		};
+		C8F5A06A2981DD1800D9EF2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8F5A04D2981DD1600D9EF2C /* SSageNutrition */;
+			targetProxy = C8F5A0692981DD1800D9EF2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C8F5A0702981DD1800D9EF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8F5A0712981DD1800D9EF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8F5A0732981DD1800D9EF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SSageNutrition/Preview Content\"";
+				DEVELOPMENT_TEAM = F7V9H4X59F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SSageNutrition/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ja-Hopkins.SSageNutrition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C8F5A0742981DD1800D9EF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SSageNutrition/Preview Content\"";
+				DEVELOPMENT_TEAM = F7V9H4X59F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SSageNutrition/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ja-Hopkins.SSageNutrition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C8F5A0762981DD1800D9EF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7V9H4X59F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ja-Hopkins.SSageNutritionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSageNutrition.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SSageNutrition";
+			};
+			name = Debug;
+		};
+		C8F5A0772981DD1800D9EF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7V9H4X59F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ja-Hopkins.SSageNutritionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSageNutrition.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SSageNutrition";
+			};
+			name = Release;
+		};
+		C8F5A0792981DD1800D9EF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7V9H4X59F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ja-Hopkins.SSageNutritionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSageNutrition;
+			};
+			name = Debug;
+		};
+		C8F5A07A2981DD1800D9EF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7V9H4X59F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ja-Hopkins.SSageNutritionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSageNutrition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8F5A0492981DD1600D9EF2C /* Build configuration list for PBXProject "SSageNutrition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F5A0702981DD1800D9EF2C /* Debug */,
+				C8F5A0712981DD1800D9EF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8F5A0722981DD1800D9EF2C /* Build configuration list for PBXNativeTarget "SSageNutrition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F5A0732981DD1800D9EF2C /* Debug */,
+				C8F5A0742981DD1800D9EF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8F5A0752981DD1800D9EF2C /* Build configuration list for PBXNativeTarget "SSageNutritionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F5A0762981DD1800D9EF2C /* Debug */,
+				C8F5A0772981DD1800D9EF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8F5A0782981DD1800D9EF2C /* Build configuration list for PBXNativeTarget "SSageNutritionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F5A0792981DD1800D9EF2C /* Debug */,
+				C8F5A07A2981DD1800D9EF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C8F5A07F2981DF4700D9EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8F5A0802981DF4700D9EF2C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8F5A07F2981DF4700D9EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C8F5A0822981DF4700D9EF2C /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8F5A07F2981DF4700D9EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		C8F5A0842981DF4700D9EF2C /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8F5A07F2981DF4700D9EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		C8F5A0862981DF4700D9EF2C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8F5A07F2981DF4700D9EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C8F5A0882981DF4700D9EF2C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8F5A07F2981DF4700D9EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		C8F5A08A2981DF4700D9EF2C /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8F5A07F2981DF4700D9EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C8F5A0462981DD1600D9EF2C /* Project object */;
+}

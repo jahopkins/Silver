@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>530859105403-u83k10vun4k3rh59a2g21mmmj7fqk00e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.530859105403-u83k10vun4k3rh59a2g21mmmj7fqk00e</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC4Ru-qYBYXbmVMwIx6E2admjRFeJNeBwc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>530859105403</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Ja-Hopkins.SSageNutrition</string>
+	<key>PROJECT_ID</key>
+	<string>ss-nutrition</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ss-nutrition.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:530859105403:ios:9ff4d8fe2cd86e3bf796de</string>
+</dict>
+</plist>
