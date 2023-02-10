@@ -19,6 +19,9 @@ struct DataView: View {
     var body: some View {
         VStack
         {
+            
+            Text("hi")
+//                .onAppear(mode)
             Divider()
 //            TextField("Add food", text: $newFoodAdded)
 
