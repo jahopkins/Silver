@@ -83,14 +83,15 @@ struct ContentView: View {
                             .tabItem {
                                 Label("Nutrients", systemImage: "face.smiling.inverse")
                             }
+                        foodNameListView()
+                            .tabItem{
+                                Label("Food", systemImage: "fork.knife")
+                            }
                         accountView()
                             .tabItem{
                                 Label("Account", systemImage: "person")
                             }
-                        foodNameListView()
-                            .tabItem{
-                                Label("Account", systemImage: "fork.knife")
-                            }
+                        
                         
                         
                         
@@ -149,7 +150,8 @@ struct ContentView: View {
                     }
                 }
                 else {
-                    SignInView()
+                    AppLoadedView()
+//                    SignInView()
                 }
             
             
@@ -170,6 +172,50 @@ struct ContentView: View {
         //         view protocol has one requirement: 'body' property that returns some view
         //         contnetview_previews struct conforms to the previewprovider protocol
         //         it isnt part of code, it only previews the ui
+struct AppLoadedView: View {
+//    let logo = Image("Logo")
+    var body: some View {
+        ZStack {
+            Color("PrimaryColor").edgesIgnoringSafeArea(.all)
+            VStack {
+                Image("Logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+                NavigationLink(
+                    destination: SignInView(),
+                    label: {
+                        Text("Sign In")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color("SecondaryColor"))
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.white)
+                            .cornerRadius(50.0)
+                            .padding(.vertical)
+                    }
+                        )
+                HStack {
+                    Text("Don't have an account?")
+//                        .fontWeight(.bold)
+                        .foregroundColor(Color("SecondaryColor"))
+                    NavigationLink(
+                        destination: SignUpView(),
+                        label: {
+                            Text("Sign Up")
+                                .fontWeight(.bold)
+                                .foregroundColor(Color("SecondaryColor2"))
+                        })
+                }
+                //
+            }
+                    .padding()
+            
+            
+        }
+    }
+}
         
 struct SignInView: View {
            
@@ -200,6 +246,7 @@ struct SignInView: View {
         //        }
 //                Divider()
             VStack{
+//                Spacer()
                 // Image("logo")
                 VStack {
                     TextField("Enail Address", text: $email)
@@ -241,6 +288,7 @@ struct SignInView: View {
                 
             }
             .navigationTitle("Sign In")
+            .padding()
             
             
         }

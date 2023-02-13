@@ -13,8 +13,8 @@
 		C83BB78E299020F9002914D6 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BB78D299020F9002914D6 /* SwiftUIView.swift */; };
 		C83BB7902996358E002914D6 /* getNutrients.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BB78F2996358E002914D6 /* getNutrients.swift */; };
 		C83BB7922996401E002914D6 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BB7912996401E002914D6 /* Charts.swift */; };
+		C83BB7942996A838002914D6 /* SingleFoodNutrientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BB7932996A838002914D6 /* SingleFoodNutrientView.swift */; };
 		C86C05CA298B73DA002C2CFC /* ListOfFoodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C05C9298B73DA002C2CFC /* ListOfFoodsView.swift */; };
-		C8CFE85629823ECD000DD838 /* API-requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFE85529823ECD000DD838 /* API-requests.swift */; };
 		C8CFE85929838438000DD838 /* MicronutrientAmounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFE85829838437000DD838 /* MicronutrientAmounts.swift */; };
 		C8CFE85B2983897C000DD838 /* MicronutrientResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFE85A2983897C000DD838 /* MicronutrientResultsModel.swift */; };
 		C8CFE85E2983E087000DD838 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFE85D2983E087000DD838 /* AddFoodView.swift */; };
@@ -69,8 +69,8 @@
 		C83BB78D299020F9002914D6 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		C83BB78F2996358E002914D6 /* getNutrients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getNutrients.swift; sourceTree = "<group>"; };
 		C83BB7912996401E002914D6 /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
+		C83BB7932996A838002914D6 /* SingleFoodNutrientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFoodNutrientView.swift; sourceTree = "<group>"; };
 		C86C05C9298B73DA002C2CFC /* ListOfFoodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfFoodsView.swift; sourceTree = "<group>"; };
-		C8CFE85529823ECD000DD838 /* API-requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API-requests.swift"; sourceTree = "<group>"; };
 		C8CFE85729830101000DD838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C8CFE85829838437000DD838 /* MicronutrientAmounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicronutrientAmounts.swift; sourceTree = "<group>"; };
 		C8CFE85A2983897C000DD838 /* MicronutrientResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicronutrientResultsModel.swift; sourceTree = "<group>"; };
@@ -141,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				C83BB78F2996358E002914D6 /* getNutrients.swift */,
+				C83BB7932996A838002914D6 /* SingleFoodNutrientView.swift */,
 				C83BB7912996401E002914D6 /* Charts.swift */,
 				C83BB789298CF4BB002914D6 /* SingleNutrientView.swift */,
 				C83BB787298CEB98002914D6 /* practice.swift */,
@@ -174,7 +175,6 @@
 				C8F5A0532981DD1600D9EF2C /* ContentView.swift */,
 				C8F5A0552981DD1800D9EF2C /* Assets.xcassets */,
 				C8F5A0572981DD1800D9EF2C /* Preview Content */,
-				C8CFE85529823ECD000DD838 /* API-requests.swift */,
 			);
 			path = SSageNutrition;
 			sourceTree = "<group>";
@@ -373,6 +373,7 @@
 				C83BB7902996358E002914D6 /* getNutrients.swift in Sources */,
 				C8CFE8602983E606000DD838 /* DataView.swift in Sources */,
 				C8CFE85E2983E087000DD838 /* AddFoodView.swift in Sources */,
+				C83BB7942996A838002914D6 /* SingleFoodNutrientView.swift in Sources */,
 				C86C05CA298B73DA002C2CFC /* ListOfFoodsView.swift in Sources */,
 				C8F5A0542981DD1600D9EF2C /* ContentView.swift in Sources */,
 				C8CFE85B2983897C000DD838 /* MicronutrientResultsModel.swift in Sources */,
@@ -382,7 +383,6 @@
 				C8F5A0942981F59100D9EF2C /* ViewModel.swift in Sources */,
 				C8F5A08F2981E7EA00D9EF2C /* Food.swift in Sources */,
 				C83BB78A298CF4BB002914D6 /* SingleNutrientView.swift in Sources */,
-				C8CFE85629823ECD000DD838 /* API-requests.swift in Sources */,
 				C8CFE8662986F8BA000DD838 /* ApiResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
