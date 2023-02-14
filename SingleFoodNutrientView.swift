@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct SingleFoodNutrientView: View {
+    @ObservedObject var model = ViewModel()
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            
+
+            List (model.list) { item in
+                VStack(alignment: .leading) {
+                    Text("\(item.sodium)")
+                    
+                    //                                .listRowSeparator(.hidden)
+                        .listRowInsets(.init(top:0, leading: 40, bottom: 0, trailing: 40))
+                    
+                    
+                }
+            }
+//            Text(model.dateUserId)
+
+
+//            }
+            .onAppear(perform: { model.getData() })
+        }
+        
     }
 }
 
