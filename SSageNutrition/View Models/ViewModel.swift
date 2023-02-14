@@ -20,7 +20,8 @@ class ViewModel: ObservableObject {
     let date = Date()
     let df = DateFormatter()
     var dateUserId: String = ""
-    
+    @Published var creationStatus = ""
+//    @Published var showError = false
 //    @State var formatedID = ""
     func getFomattedDate() {
         df.dateStyle = DateFormatter.Style.medium
@@ -84,7 +85,10 @@ class ViewModel: ObservableObject {
                                             vitaminC: d["vitaminC"] as? Double ?? 0.00000,
                                             folicAcid: d["folicAcid"] as? Double ?? 0.00000,
                                             cholesterol: d["cholesterol"] as? Double ?? 0.00000,
-                                            calcium: d["calcium"] as? Double ?? 0.00000)
+                                            calcium: d["calcium"] as? Double ?? 0.00000,
+                                            servings: d["servings"] as? Int ?? 0,
+                                            units: d["units"] as? String ?? "")
+                                
                                 
                             }
                             //                            print(self.list)
@@ -122,7 +126,9 @@ class ViewModel: ObservableObject {
                  vitaminC: Double,
                  folicAcid: Double,
                  cholesterol: Double,
-                 calcium: Double
+                 calcium: Double,
+                 servings: Int,
+                 units: String
     ) {
         self.getUserId()
         let db = Firestore.firestore()
@@ -135,8 +141,11 @@ class ViewModel: ObservableObject {
         db.collection("Users").document(dateUserId).setData([:]) { err in
             if let err = err {
                 print("Error writing document: \(err)")
+                self.creationStatus = "Unable to find nutrient data for this \(foodName)"
             } else {
                 print("Document successfully written!")
+                self.creationStatus = "Succesfully added \(foodName)"
+                print(self.creationStatus)
             }
         }
         //        }
@@ -152,17 +161,21 @@ class ViewModel: ObservableObject {
                                                                                         "vitaminC": vitaminC,
                                                                                         "folicAcid": folicAcid,
                                                                                         "cholesterol": cholesterol,
-                                                                                        "calcium": calcium
+                                                                                        "calcium": calcium,
+                                                                                           "servings": servings,
+                                                                                           "units": units,
                                                                                         
                                                                                        ]){ error in
             //        ref.setData(["name": foodName, "sodium": sodium]) { error in
             if error == nil {
+                
                 // no errors
                 self.getData()
                 print("retrieving Data")
             }
             else {
-                // handle error
+                
+//                self.creationStatus = "Unable to find nutrient data for this \(foodName)"
             }
         }
     }
@@ -202,6 +215,55 @@ class ViewModel: ObservableObject {
             }
         }
         
+        
+        
+    }
+    
+    func decreaseSupplements(nutrient: String, amount: Double) {
+        
+        // make an api call using the food name and serving
+        // using the information from the api call to update decrease supplements
+        self.getUserId()
+        let db = Firestore.firestore()
+        // ask ansel how would i solve this problem without using the exclamation point
+        // i used it without but i got an error
+        // i was sstuck for a while because all thr
+        // the if statement was pointless because the id wil never be nill, i
+        // have to find a way to check if it is in the database or use merge
+        //        if userID == nil {
+        db.collection("Users").document(dateUserId).setData([:]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
+        //        }
+        
+        db.collection("Users").document(dateUserId).collection("nutrients").document(nutrient).setData(["nutrient" : FieldValue.increment(Int64(-amount))], merge: true) { error in
+            //        ref.setData(["name": foodName, "sodium": sodium]) { error in
+            if error == nil {
+                // no errors
+                self.getData()
+                print("new function")
+            }
+            else {
+                // handle error
+            }
+        }
+    }
+    
+    
+    func deleteFood(foodID: String, foodName: String) {
+        let db = Firestore.firestore()
+        db.collection("Users").document(dateUserId).collection("foods").document(foodID).delete() { err in
+            if let err = err {
+                print("Error removing Food: \(err)")
+            } else {
+                print("Document succesfully removed")
+            }
+        }
+        getData()
         
         
     }

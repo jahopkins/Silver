@@ -29,6 +29,8 @@ struct Food: Identifiable, Codable {
     var folicAcid: Double
     var cholesterol: Double
     var calcium: Double
+    var servings: Int
+    var units: String
 }
 
 struct NutrientItem: Identifiable, Codable {
@@ -62,6 +64,8 @@ struct Response: Codable, Hashable {
     let nf_sodium: Double
     let nf_potassium: Double
     let nf_cholesterol: Double
+    let serving_qty: Int
+    let serving_unit: String
     let id = UUID()
     let full_nutrients: [Micronutrients]
 }

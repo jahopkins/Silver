@@ -91,6 +91,7 @@ struct ContentView: View {
                             .tabItem{
                                 Label("Account", systemImage: "person")
                             }
+                            
                         
                         
                         
@@ -148,9 +149,10 @@ struct ContentView: View {
                         // commented out
                         
                     }
+                    .tint(Color("SecondaryColor2"))
                 }
                 else {
-                    AppLoadedView()
+                    WelcomeView()
 //                    SignInView()
                 }
             
@@ -172,7 +174,7 @@ struct ContentView: View {
         //         view protocol has one requirement: 'body' property that returns some view
         //         contnetview_previews struct conforms to the previewprovider protocol
         //         it isnt part of code, it only previews the ui
-struct AppLoadedView: View {
+struct WelcomeView: View {
 //    let logo = Image("Logo")
     var body: some View {
         ZStack {
@@ -245,8 +247,15 @@ struct SignInView: View {
         //            Text("Save meal")
         //        }
 //                Divider()
+        ZStack {
+            Color("PrimaryColor").edgesIgnoringSafeArea(.all)
             VStack{
-//                Spacer()
+                Image("Logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100, height: 100)
+                
+                //                Spacer()
                 // Image("logo")
                 VStack {
                     TextField("Enail Address", text: $email)
@@ -254,12 +263,16 @@ struct SignInView: View {
                         .autocapitalization(.none)
                         .padding()
                         .background(Color(.secondarySystemBackground))
+//                        .cornerRadius(50.0)
+//                        .padding(.vertical)
                     
                     SecureField("Password", text: $password)
                         .disableAutocorrection(true)
                         .autocapitalization(.none)
                         .padding()
                         .background(Color(.secondarySystemBackground))
+//                        .cornerRadius(50.0)
+//                        .padding(.vertical)
                     Button(action: {
                         
                         guard !email.isEmpty, !password.isEmpty else {
@@ -271,24 +284,25 @@ struct SignInView: View {
                         Text("Sign In")
                             .foregroundColor(Color.white)
                             .frame(width: 200, height: 50)
-                            .background(Color.blue)
-                            .cornerRadius(8)
+                            .background(Color("SecondaryColor2"))
+                            .cornerRadius(50)
                     })
                     
-                    NavigationLink("Create Account", destination: SignUpView())
-                        .padding()
+                    //                    NavigationLink("Create Account", destination: SignUpView())
+                    //                        .padding()
                     
                     
                 }
                 .padding()
                 
                 Spacer()
-               
+                
                 
                 
             }
             .navigationTitle("Sign In")
             .padding()
+        }
             
             
         }
@@ -304,9 +318,17 @@ struct SignUpView: View {
 //            @ObservedObject var model = ViewModel()
     @EnvironmentObject var appViewModel: AppViewModel
     var body: some View {
-//
-                Divider()
+//        Divider()
+        ZStack {
+            Color("PrimaryColor").edgesIgnoringSafeArea(.all)
             VStack{
+                Image("Logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100, height: 100)
+                //
+                //                Divider()
+                
                 // Image("logo")
                 VStack {
                     TextField("Enail Address", text: $email)
@@ -327,13 +349,14 @@ struct SignUpView: View {
                             return
                         }
                         
+                        
                         appViewModel.signUp(email: email, password: password)
                     }, label: {
                         Text("Create Account")
                             .foregroundColor(Color.white)
                             .frame(width: 200, height: 50)
-                            .background(Color.blue)
-                            .cornerRadius(8)
+                            .background(Color("SecondaryColor2"))
+                            .cornerRadius(50)
                     })
                     
                     
@@ -342,8 +365,10 @@ struct SignUpView: View {
                 
                 Spacer()
                 
+                
             }
             .navigationTitle("Create Account")
+        }
             
             
         }
@@ -358,6 +383,7 @@ struct HomeView: View {
         NavigationView {
             
             ZStack {
+                Color("PrimaryColor").edgesIgnoringSafeArea(.all)
                 
                 //                List (model.list) { item in
                 //                    Text(item.name)
@@ -365,7 +391,7 @@ struct HomeView: View {
                 //                    Spacer()
                 //                }
                 
-                Color.white
+//                Color.white
                 VStack(spacing: 20) {
                     
                     //                    Text("Add Foods")

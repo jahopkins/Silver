@@ -14,6 +14,7 @@ import SwiftUI
 class apiCall: ObservableObject {
     @Published var allNutrients = [FoodArray]()
     @State var model = ViewModel()
+    @Published var apiStatus = ""
     // added completion handler
     func fetchData (userMeal: String, completionHandler: @escaping (FoodArray) -> Void) {
         guard let url = URL(string: "https://trackapi.nutritionix.com/v2/natural/nutrients") else {
@@ -66,6 +67,7 @@ class apiCall: ObservableObject {
             //            catch { print(error) this was all i had
             catch {
                 let error = error
+                self.apiStatus = "Could not locate data"
                 print(error.localizedDescription)
                 
             }
