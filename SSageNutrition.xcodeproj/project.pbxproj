@@ -14,6 +14,8 @@
 		C83BB7902996358E002914D6 /* getNutrients.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BB78F2996358E002914D6 /* getNutrients.swift */; };
 		C83BB7922996401E002914D6 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BB7912996401E002914D6 /* Charts.swift */; };
 		C83BB7942996A838002914D6 /* SingleFoodNutrientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BB7932996A838002914D6 /* SingleFoodNutrientView.swift */; };
+		C83BB796299B374F002914D6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C83BB795299B374F002914D6 /* .gitignore */; };
+		C83BB798299B3788002914D6 /* Keys in Resources */ = {isa = PBXBuildFile; fileRef = C83BB797299B3788002914D6 /* Keys */; };
 		C86C05CA298B73DA002C2CFC /* ListOfFoodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C05C9298B73DA002C2CFC /* ListOfFoodsView.swift */; };
 		C8CFE85929838438000DD838 /* MicronutrientAmounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFE85829838437000DD838 /* MicronutrientAmounts.swift */; };
 		C8CFE85B2983897C000DD838 /* MicronutrientResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CFE85A2983897C000DD838 /* MicronutrientResultsModel.swift */; };
@@ -70,6 +72,8 @@
 		C83BB78F2996358E002914D6 /* getNutrients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getNutrients.swift; sourceTree = "<group>"; };
 		C83BB7912996401E002914D6 /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
 		C83BB7932996A838002914D6 /* SingleFoodNutrientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFoodNutrientView.swift; sourceTree = "<group>"; };
+		C83BB795299B374F002914D6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C83BB797299B3788002914D6 /* Keys */ = {isa = PBXFileReference; lastKnownFileType = text; path = Keys; sourceTree = "<group>"; };
 		C86C05C9298B73DA002C2CFC /* ListOfFoodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfFoodsView.swift; sourceTree = "<group>"; };
 		C8CFE85729830101000DD838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C8CFE85829838437000DD838 /* MicronutrientAmounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicronutrientAmounts.swift; sourceTree = "<group>"; };
@@ -141,6 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				C83BB78F2996358E002914D6 /* getNutrients.swift */,
+				C83BB795299B374F002914D6 /* .gitignore */,
+				C8F5A07B2981DE7700D9EF2C /* GoogleService-Info.plist */,
+				C83BB797299B3788002914D6 /* Keys */,
 				C83BB7932996A838002914D6 /* SingleFoodNutrientView.swift */,
 				C83BB7912996401E002914D6 /* Charts.swift */,
 				C83BB789298CF4BB002914D6 /* SingleNutrientView.swift */,
@@ -169,7 +176,6 @@
 				C8CFE85C2983E064000DD838 /* Views */,
 				C8CFE85729830101000DD838 /* Info.plist */,
 				C8F5A08D2981E7C100D9EF2C /* Models */,
-				C8F5A07B2981DE7700D9EF2C /* GoogleService-Info.plist */,
 				C8F5A0922981F57900D9EF2C /* View Models */,
 				C8F5A0512981DD1600D9EF2C /* SSageNutritionApp.swift */,
 				C8F5A0532981DD1600D9EF2C /* ContentView.swift */,
@@ -337,7 +343,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83BB796299B374F002914D6 /* .gitignore in Resources */,
 				C8F5A0592981DD1800D9EF2C /* Preview Assets.xcassets in Resources */,
+				C83BB798299B3788002914D6 /* Keys in Resources */,
 				C8F5A0562981DD1800D9EF2C /* Assets.xcassets in Resources */,
 				C8F5A07C2981DE7700D9EF2C /* GoogleService-Info.plist in Resources */,
 			);

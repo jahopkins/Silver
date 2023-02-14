@@ -25,18 +25,35 @@ struct practice: View {
                     List (model.nutList) { item in
                         VStack(alignment: .leading) {
                             Text(item.id).font(.title)
+                                .foregroundColor(Color("SecondaryColor"))
                             let formattedAmount =  String(format:"%.2f", item.amount)
-                            Text("\(formattedAmount)").font(.headline)
+                            HStack {
+                                Text("\(formattedAmount)").font(.headline)
+                                    .foregroundColor(Color("SecondaryColor"))
+                                if item.id == "Lysine" {
+                                    Text("g").font(.subheadline)
+                                }
+                                else if (item.id == "Folic Acid" || item.id == "Vitamin B12") {
+                                    Text("Âµg").font(.subheadline)
+                                }
+                                else if (item.id == "Vitamin D") {
+                                    Text("IU").font(.subheadline)
+                                }
+                                else {
+                                    Text("mg").font(.subheadline)
+                                }
+                            }
+                            
                             NavigationLink(destination: Charts()
-                                .navigationTitle("look at chart")
+                                .navigationTitle("Recommended Daily Values")
                                            //                        .onAppear {
                                            //                        model.getData()
                                            //                    }
                             )
                             {
         //                        Image(systemName: "Plus")
-                                Text("Compare to Daily Recommend Values")
-                                    .foregroundStyle(.black)
+                                Text("Compare to Daily Recommended Values")
+                                    .foregroundColor(Color("SecondaryColor2"))
                                     .font(.footnote)
                               
                                 
@@ -53,9 +70,14 @@ struct practice: View {
                     
                     
                 }
-            } header: {
-                Text("\(model.formattedDate)")
+                    .background(Color("PrimaryColor2"))
+                    .scrollContentBackground(.hidden)
             }
+        header: {
+                Text("\(model.formattedDate)")
+                
+            }
+            
                 
             
 //            model.nutList.forEach {
