@@ -1,4 +1,5 @@
 GoogleService-Info.plist
+Secrets.swift
 
 # Created by https://www.toptal.com/developers/gitignore/api/xcode,swift,macos,swiftpackagemanager,firebase
 # Edit at https://www.toptal.com/developers/gitignore?templates=xcode,swift,macos,swiftpackagemanager,firebase
