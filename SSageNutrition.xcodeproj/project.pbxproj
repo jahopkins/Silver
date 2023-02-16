@@ -30,9 +30,6 @@
 		C8F5A0632981DD1800D9EF2C /* SSageNutritionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A0622981DD1800D9EF2C /* SSageNutritionTests.swift */; };
 		C8F5A06D2981DD1800D9EF2C /* SSageNutritionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A06C2981DD1800D9EF2C /* SSageNutritionUITests.swift */; };
 		C8F5A06F2981DD1800D9EF2C /* SSageNutritionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F5A06E2981DD1800D9EF2C /* SSageNutritionUITestsLaunchTests.swift */; };
-		C8F5A07C2981DE7700D9EF2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8F5A07B2981DE7700D9EF2C /* GoogleService-Info.plist */; };
-		C8F5A07D2981DE7700D9EF2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8F5A07B2981DE7700D9EF2C /* GoogleService-Info.plist */; };
-		C8F5A07E2981DE7700D9EF2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8F5A07B2981DE7700D9EF2C /* GoogleService-Info.plist */; };
 		C8F5A0812981DF4700D9EF2C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C8F5A0802981DF4700D9EF2C /* FirebaseAuth */; };
 		C8F5A0832981DF4700D9EF2C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C8F5A0822981DF4700D9EF2C /* FirebaseDatabase */; };
 		C8F5A0852981DF4700D9EF2C /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C8F5A0842981DF4700D9EF2C /* FirebaseDatabaseSwift */; };
@@ -92,7 +89,6 @@
 		C8F5A0682981DD1800D9EF2C /* SSageNutritionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSageNutritionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F5A06C2981DD1800D9EF2C /* SSageNutritionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSageNutritionUITests.swift; sourceTree = "<group>"; };
 		C8F5A06E2981DD1800D9EF2C /* SSageNutritionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSageNutritionUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C8F5A07B2981DE7700D9EF2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C8F5A08E2981E7EA00D9EF2C /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		C8F5A0932981F59100D9EF2C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,7 +142,6 @@
 			children = (
 				C83BB78F2996358E002914D6 /* getNutrients.swift */,
 				C83BB795299B374F002914D6 /* .gitignore */,
-				C8F5A07B2981DE7700D9EF2C /* GoogleService-Info.plist */,
 				C83BB797299B3788002914D6 /* Keys */,
 				C83BB7932996A838002914D6 /* SingleFoodNutrientView.swift */,
 				C83BB7912996401E002914D6 /* Charts.swift */,
@@ -347,7 +342,6 @@
 				C8F5A0592981DD1800D9EF2C /* Preview Assets.xcassets in Resources */,
 				C83BB798299B3788002914D6 /* Keys in Resources */,
 				C8F5A0562981DD1800D9EF2C /* Assets.xcassets in Resources */,
-				C8F5A07C2981DE7700D9EF2C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +349,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8F5A07D2981DE7700D9EF2C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +356,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8F5A07E2981DE7700D9EF2C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
